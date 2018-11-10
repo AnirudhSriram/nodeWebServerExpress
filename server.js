@@ -42,6 +42,14 @@ app.get('/about',(req,res)=>{
     });
 })
 
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle : 'Project portfolio',
+        desc : 'List of projects on my Github'
+       
+    });
+})
+
 
 app.listen(port,()=>{
     console.log(`Server is listening on ${port}`);
